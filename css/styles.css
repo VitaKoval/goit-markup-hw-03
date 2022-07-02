@@ -66,6 +66,7 @@ list-style: none;
 .main-nav {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 .site-nav {
     display: flex;
@@ -129,16 +130,21 @@ color: var(--accent-color);
 .hero {
     background-color: var(--second-bg-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero .title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
+max-width: 696px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--contrast-text-color);
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .hero .button {
@@ -229,8 +235,10 @@ width: 370px;
 .team .item:not(:nth-child(4n)) {
     margin-right: 30px;
 }
-.team .img {
-    margin-bottom: 30px;
+
+.team .sign {
+    padding-top: 30px;
+    padding-bottom: 16px;
 }
 .team .title {
 font-weight: 500;
@@ -246,7 +254,7 @@ margin-bottom: 10px;
         line-height: 1.19;
         text-align: center;
         margin-top: 0;
-        margin-bottom: 30px;
+        margin-bottom: 0;
 }
 
 /* Новая сраница - Потрфолио */
@@ -258,7 +266,7 @@ margin-bottom: 10px;
 .filter {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .filter .item {
 margin-right: 8px;
@@ -290,7 +298,6 @@ margin-right: 8px;
 
 .cards>.card {
     width: 370px;
-    border-bottom: 1px solid #EEEEEE;
     margin-bottom: 30px
 }
 .cards>.card:not(:nth-child(3n)){
@@ -300,13 +307,22 @@ margin-right: 30px;
     margin-bottom: 0;
 }
 
+.card .img {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cards .sign {
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE; 
+    border-left: 1px solid #EEEEEE;
+}
 
 .cards .link {
     text-decoration:none;
 }
-.card .img {
-    margin-bottom: 20px;
-}
+
 .card .title {
     font-weight: 700;
     font-size: 18px;
@@ -321,7 +337,7 @@ margin-right: 30px;
     line-height: 1.9;
     color: var(--primary-text-color);
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 /* Футер */
 .footer {
@@ -336,6 +352,10 @@ margin-right: 30px;
 }
 .logo.light {
     color: var(--contrast-text-color);
+}
+
+.contacts-footer .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .contacts-footer .link {
